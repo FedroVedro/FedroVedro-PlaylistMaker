@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_element">#1A1B22</color>
+    <color name="gray_element">#AEAFB4</color>
+    <color name="gray_light">#E6E8EB</color>
+
+    <color name="tint_if_theme">#FF000000</color>
+
+    <color name="fill_color">#FFFFFF</color>
+    <color name="theme_hard_text_color">#1A1B22</color>
+    <color name="theme_soft_text_color">#AEAFB4</color>
+    <color name="text_color_single">#1A1B22</color>
+    <color name="setting_arrow_back">#1A1B22</color>
+    <color name="text_edit_fill_color">#E6E8EB</color>
+    <color name="text_edit_icon_color">#AEAFB4</color>
+    <color name="player_add_track_button_color">#401A1B22</color>
+</resources>
