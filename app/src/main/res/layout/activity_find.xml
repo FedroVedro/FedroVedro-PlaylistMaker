@@ -37,7 +37,7 @@
             android:drawablePadding="@dimen/mm_btn_icon_padding"
             android:imeOptions="actionDone"
             android:singleLine="true"
-            />
+            android:background="@drawable/edit_text_bg"/>
 
         <Button
             android:id="@+id/btn_clear"
@@ -59,5 +59,50 @@
         android:visibility="gone"/>
 
 
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/twenty_four"/>
+
+    <ProgressBar android:id="@+id/progressBar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/one_hundred_fourteen"
+        android:indeterminateTint="@color/purple_500"
+        />
+
+    <ImageView
+        android:id="@+id/statusImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/findnothing"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/placeholderMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/one_hundred"
+        android:fontFamily="@font/ys_display_medium"
+        android:textAlignment="center"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="@dimen/tl_text_size"
+        android:textStyle="bold"
+        />
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/SearchRefreshButton"
+            android:text="@string/btn_update"
+            android:layout_marginBottom="@dimen/as_margin_top_big"
+            android:layout_gravity="center|bottom"
+            android:visibility="gone"/>
+    </FrameLayout>
 </LinearLayout>

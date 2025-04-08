@@ -4,9 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.hfad.playlistmaker.features.search.ui.SearchActivity
+import com.hfad.playlistmaker.features.media.MediaLibraryActivity
 import com.hfad.playlistmaker.R
 import com.hfad.playlistmaker.features.settings.domain.SetTheme
-import com.hfad.playlistmaker.features.search.ui.FindActivity
 import com.hfad.playlistmaker.features.settings.ui.SettingsActivity
 import com.hfad.playlistmaker.features.settings.ui.THEME_KEY
 import com.hfad.playlistmaker.features.settings.ui.THEME_PREFERENCES
@@ -21,11 +22,17 @@ class MainActivity : AppCompatActivity() {
         val settingsTheme = SetTheme()
         settingsTheme.switchTheme(isDark)
 
-        val findButton = findViewById<Button>(R.id.btn_find_am)
-        findButton.setOnClickListener {
-            val intent = Intent(this, FindActivity::class.java)
-            startActivity(intent)
-            }
+        val btnFind = findViewById<Button>(R.id.btn_find_am)
+        btnFind.setOnClickListener {
+            val displayIntent = Intent(this, SearchActivity::class.java)
+            startActivity(displayIntent)
+        }
+
+        val btnMedia = findViewById<Button>(R.id.btn_media_am)
+        btnMedia.setOnClickListener {
+            val displayIntent = Intent(this, MediaLibraryActivity::class.java)
+            startActivity(displayIntent)
+        }
 
         val btnSettings = findViewById<Button>(R.id.btn_settings_am)
         btnSettings.setOnClickListener {
@@ -33,6 +40,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(displayIntent)
         }
 
-
-        }
     }
+}
